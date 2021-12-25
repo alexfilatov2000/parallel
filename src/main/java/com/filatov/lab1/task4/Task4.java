@@ -29,7 +29,7 @@ public class Task4 implements Runnable{
         String currThreadName = Thread.currentThread().getName();
         harrisOrderedList.add(currThreadName);
 
-        if (currThreadName.equals("Thread-4")) {
+        if (currThreadName.equals("Thread-2")) {
             harrisOrderedList.remove(currThreadName);
             System.out.println("Remove: " + currThreadName);
         }

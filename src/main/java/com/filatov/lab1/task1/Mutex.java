@@ -35,7 +35,7 @@ public class Mutex {
     public void _wait() throws InterruptedException {
         Thread thread = Thread.currentThread();
         if (!thread.equals(currentThread.get())) {
-            throw new RuntimeException("You should lock mutex before use of wait method");
+            throw new RuntimeException("Usw lock before");
         }
 
         waitingThreads.put(thread);

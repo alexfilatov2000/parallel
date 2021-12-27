@@ -9,7 +9,7 @@ public class Task2 implements Runnable{
     }
 
     public static void main(String[] args) throws InterruptedException {
-        SkipList<String> skipList = new SkipList<>(16, 0.5);
+        SkipList<String> skipList = new SkipList<>(16, 0.1);
         Thread[] arr = new Thread[10];
 
         for (int i = 0; i < 10; i++) {
